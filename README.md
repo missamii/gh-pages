@@ -6,3 +6,7 @@ If you uncover a mine, the game ends. Uncover an empty square, and you keep play
 
 ## How to Play this version
 To keep coding it simple. All you really would need to do is to try to not click on the bombs. They could be anywhere.
+
+
+## Play the Game
+[Link to Game](http://lotusandlupus.net/ga/msgame/) or my website [this link] (https://missamii.github.io/gh-pages/index.html)
