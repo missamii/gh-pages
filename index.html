@@ -3,34 +3,40 @@
  <head>
    <meta charset="utf-8">
    <link rel="stylesheet" href="style.css"></style>
-   <script type="text/javascript" src="mine.js"></script>
+   <script type="text/javascript" src="mines.js"></script>
    <title>Minesweeper | by Tiffany Lo</title>
  </head>
  <body>
-   <h1>Mine  Sweeper</h1>
-   <div class="mineboard" style="width: 5%; border: 5px solid #EAB5C5;" >
+
+   <h1>Mine  Sweeper | by Tiffany Lo</h1>
+
+   <div class="mineboard" style="width: 5%; border: 5px solid #EAB5C5;">
+
  <div class="mineBody">
  <div class="mineRow"> <!-- Row One-->
  <div class="mineCell" id="a">&nbsp;</div> <!-- Cell Zero -->
- <div class="mineCell" id="b">&nbsp;</div> <!-- Cell One -->
+ <div class="mineCell" id="b"><img src="images/bomb.png" style="visibility:hidden" id="imgb" /></div> <!-- Cell One -->
  <div class="mineCell" id="c">&nbsp;</div> <!-- Cell Two -->
  <div class="mineCell" id="d">&nbsp;</div> <!-- Cell Three -->
  <div class="mineCell" id="e">&nbsp;</div> <!-- Cell Four -->
  </div>
- <div class="mineRow"> <!-- Row Two-->
- <div class="mineCell" id="f">&nbsp;</div> <!-- Cell Zero -->
- <div class="mineCell" id="g">&nbsp;</div>
- <div class="mineCell" id="h">&nbsp;</div>
- <div class="mineCell" id="i">&nbsp;</div>
- <div class="mineCell" id="j">&nbsp;</div>
+
+ <div class="mineRow">
+ <div class="mineCell bomb" id="f"><img src="images/bomb.png" style="visibility:hidden" id="imgf" /></div> <!-- Cell Zero -->
+ <div class="mineCell" id="g">&nbsp;</div> <!-- Cell One-->
+ <div class="mineCell" id="h">&nbsp;</div> <!-- Cell Two-->
+ <div class="mineCell" id="i">&nbsp;</div> <!-- Cell Three-->
+ <div class="mineCell bomb" id="j"><img src="images/bomb.png" style="visibility:hidden" id="imgj" /></div> <!-- Cell Four-->
  </div>
+
  <div class="mineRow"> <!-- Row Three-->
- <div class="mineCell" id="k">&nbsp;</div>
- <div class="mineCell" id="l">&nbsp;</div>
- <div class="mineCell" id="m">&nbsp;</div>
- <div class="mineCell" id="n">&nbsp;</div>
- <div class="mineCell" id="o">&nbsp;</div>
+ <div class="mineCell" id="k">&nbsp;</div> <!-- Cell Zero-->
+ <div class="mineCell bomb" id="l"><img src="images/bomb.png" style="visibility:hidden" id="imgl" /></div> <!-- Cell One-->
+ <div class="mineCell bomb" id="m"><img src="images/bomb.png" style="visibility:hidden" id="imgm" /></div> <!-- Cell Two-->
+ <div class="mineCell" id="n">&nbsp;</div> <!-- Cell Three-->
+ <div class="mineCell bomb" id="o"><img src="images/bomb.png" style="visibility:hidden" id="imgo" /></div> <!-- Cell Four-->
  </div>
+
  <div class="mineRow"> <!-- Row Four-->
  <div class="mineCell" id="p">&nbsp;</div>
  <div class="mineCell" id="q">&nbsp;</div>
@@ -38,19 +44,24 @@
  <div class="mineCell" id="s">&nbsp;</div>
  <div class="mineCell" id="t">&nbsp;</div>
  </div>
+
  <div class="mineRow"> <!-- Row Five-->
- <div class="mineCell" id="u">&nbsp;</div>
+ <div class="mineCell bomb" id="u"><img src="images/bomb.png" style="visibility:hidden" id="imgu" /></div>
  <div class="mineCell" id="v">&nbsp;</div>
  <div class="mineCell" id="w">&nbsp;</div>
- <div class="mineCell" id="x">&nbsp;</div>
+ <div class="mineCell bomb" id="x"><img src="images/bomb.png" style="visibility:hidden" id="imgx" /></div>
  <div class="mineCell" id="y">&nbsp;</div>
  </div>
+
+    </div>
  </div>
- </div>
+
  <br>
  <!--  trying to create a function for my button, So that when the user wants a new game it'll restart the game.
  EDIT So that didn't work out. I ended up making a refresh button for the screen -->
 <button id="newGame" name="button" onClick="window.location.reload()">New Game</button>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 
  </body>
 </html>
+<!-- img credits: http://megaicons.net/iconspack-1871/65584/ for bombs, http://www.zazzle.com/pixel+bomb+gifts game over sign-->
